@@ -1,26 +1,27 @@
-# Smart-Spam-Detector
-"A Machine Learning-powered text classifier built with Python to detect and filter Spam vs. Ham (safe) messages using TF-IDF Vectorization and Naive Bayes, featuring an interactive Gradio dashboard."
+# 🚨 Smart Spam Detector: Interactive Web App
 
-# Smart Text Classifier: Spam Detector 📧
+## 📖 Overview
+This project implements a Machine Learning-based text classifier to detect whether an SMS or email is **Spam** or **Ham** (Safe). 
 
-A machine learning semester project that classifies emails and SMS messages as either Spam or Ham (Safe). 
+Instead of just running a background script, this project features a **fully interactive web dashboard** where users can paste custom text and receive real-time predictions. The model leverages Natural Language Processing (NLP) techniques, specifically TF-IDF vectorization, and is powered by a Naive Bayes classifier optimized for text data.
 
-## Core Concepts Covered
-* **Natural Language Processing (NLP):** TF-IDF Vectorization
-* **Algorithms Compared:** Logistic Regression vs. Naive Bayes
-* **Deployment:** Interactive web dashboard using Gradio
+## ✨ Key Features
+* **Interactive UI:** Built using Gradio, allowing non-technical users to test the model seamlessly.
+* **Algorithm Comparison:** Evaluated both Logistic Regression and Multinomial Naive Bayes (Naive Bayes was selected for the final deployment due to higher precision).
+* **NLP Pipeline:** Utilizes Scikit-Learn's `TfidfVectorizer` to convert raw text into mathematical features by penalizing common words and highlighting unique keywords.
+* **Modular Design:** The training phase (Jupyter Notebook) is strictly separated from the deployment phase (`app.py`), using `pickle` to transfer the trained models.
 
-## How to Run the Dashboard Locally
-1. Clone this repository to your local machine.
-2. Install the required dependencies by running:
-   `pip install -r requirements.txt`
-3. Launch the web application:
-   `python app.py`
-4. Open the local URL provided in your terminal to test the model.
-
-## Project Structure
-* `Spam_Detection_Training.ipynb`: Google Colab notebook containing data preprocessing and model training.
-* `app.py`: The Gradio web interface script.
+## 🗂️ Project Structure
+* `app.py`: The main Python script that runs the Gradio web dashboard.
+* `Spam_Detection_Training.ipynb`: The Google Colab notebook containing data cleaning, exploratory analysis, and model training.
 * `vectorizer.pkl`: The saved TF-IDF vocabulary dictionary.
 * `model.pkl`: The trained Naive Bayes machine learning model.
-* `spam.csv`: The dataset used for training.
+* `requirements.txt`: List of dependencies needed to run the app.
+* `spam.csv`: The dataset used to train the model.
+
+## 🚀 How to Run Locally
+
+**1. Clone the Repository**
+```bash
+git clone [https://github.com/aryankk073/Smart-Spam-Detector.git](https://github.com/aryankk073/Smart-Spam-Detector.git)
+cd Smart-Spam-Detector
