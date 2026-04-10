@@ -5,6 +5,10 @@ This project implements a Machine Learning-based text classifier to detect wheth
 
 Instead of just running a background script, this project features a **fully interactive web dashboard** where users can paste custom text and receive real-time predictions. The model leverages Natural Language Processing (NLP) techniques, specifically TF-IDF vectorization, and is powered by a Naive Bayes classifier optimized for text data.
 
+## 🌐 Live Demo
+The application is deployed live on Hugging Face Spaces. 
+👉 **[Click here to test the model live!](https://huggingface.co/spaces/aryankk073/Smart-Spam-Detector)**
+
 ## ✨ Key Features
 * **Interactive UI:** Built using Gradio, allowing non-technical users to test the model seamlessly.
 * **Algorithm Comparison:** Evaluated both Logistic Regression and Multinomial Naive Bayes (Naive Bayes was selected for the final deployment due to higher precision).
